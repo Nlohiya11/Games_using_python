@@ -124,13 +124,13 @@ def eating_body():
 
 def highest_score():
     if score > high_score:
-         with open("new_file.txt", mode="w") as file:
+         with open("snake_highest.txt", mode="w") as file:
                 file.write(f"{score}")
 
 
 is_continue = True
 while is_continue:
-    with open("new_file.txt", mode="r") as file:
+    with open("snake_highest.txt", mode="r") as file:
         inti = file.read()
     high_score = int(inti)
     time.sleep(0)
